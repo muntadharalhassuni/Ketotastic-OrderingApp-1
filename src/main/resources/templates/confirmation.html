@@ -5,6 +5,8 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.thymeleaf.org http://www.thymeleaf.org
   http://www.thymeleaf.org/thymeleaf-extras-springsecurity4 http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -121,6 +123,10 @@
         <div class="row panel-body">
             <h4 class="col-md-11" th:inline="text">Total: $[[${total}]]</h4>
         </div>
+
+
+
+
     </div>
 </main>
 
