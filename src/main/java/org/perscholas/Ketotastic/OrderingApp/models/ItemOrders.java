@@ -10,10 +10,10 @@ import java.math.BigDecimal;
 
 @Entity
 @Data
-@Table(name="Item_Orders")
-@NoArgsConstructor
-@AllArgsConstructor
-@RequiredArgsConstructor
+@Table(name="item_orders")
+//@NoArgsConstructor
+//@AllArgsConstructor
+//@RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ItemOrders {
 
@@ -27,24 +27,26 @@ public class ItemOrders {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long orderId;
 
-    //@Id
-    @Column(name = "user_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long userId;
-
-    //@Id
     @Column(name = "item_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long item_id;
 
-    @NonNull @Column(name = "item_price", unique = false)
-    @DecimalMin(value = "0.00", message = "Price has to be non negative number")
-    BigDecimal itemPrice;
+//    //@Id
+//    @Column(name = "user_id")
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    Long userId;
 
     //@Id
-    @Column(name = "delivery_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long deliveryId;
+
+
+//    @NonNull @Column(name = "item_price", unique = false)
+//    @DecimalMin(value = "0.00", message = "Price has to be non negative number")
+//    BigDecimal itemPrice;
+//
+//    //@Id
+//    @Column(name = "delivery_id")
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    Long deliveryId;
 
 
 

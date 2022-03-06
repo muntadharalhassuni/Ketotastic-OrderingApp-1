@@ -124,18 +124,18 @@
             </tr>
             </tbody>
         </table>
-        <div class="col-lg-3" th:object="${deliverytypes}">
-            <select class="form-control" id="deliveryType" name="deliveryType">
-                <option value="">Select Delivery Type</option>
-                <option th:each="delivery : ${deliverytypes}"
-                        th:value="${delivery.id}"
-                        th:text="${delivery.deliveryType}"></option>
-            </select>
-        </div>
+<!--        <div class="col-lg-3" th:object="${deliverytypes}">-->
+<!--            <select class="form-control" id="deliveryType" name="deliveryType">-->
+<!--                <option value="">Select Delivery Type</option>-->
+<!--                <option th:each="delivery : ${deliverytypes}"-->
+<!--                        th:value="${delivery.id}"-->
+<!--                        th:text="${delivery.deliveryType}"></option>-->
+<!--            </select>-->
+<!--        </div>-->
         <div class="row panel-body">
             <h4 class="col-md-11" th:inline="text">Total: $[[${total}]]</h4>
-
-          <a class="btn btn-secondary" th:href="@{/${deliverytypes}confirmation}">Order</a>
+<!--            ${deliverytypes}-->
+          <a class="btn btn-secondary" th:href="@{/confirmation}">Order</a>
         </div>
     </div>
     </form>
