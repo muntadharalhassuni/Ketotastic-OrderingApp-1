@@ -35,12 +35,41 @@ public class Orders implements Serializable {
     public Orders() {
     }
 
-    public Orders(Long id, String date, Long deliveryId, Long userId) {
-        this.id = id;
+    public Orders(String date, Long deliveryId, Long userId) {
         this.date = date;
         this.deliveryId = deliveryId;
         this.userId = userId;
     }
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public Long getDeliveryId() {
+        return deliveryId;
+    }
+
+    public void setDeliveryId(Long deliveryId) {
+        this.deliveryId = deliveryId;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
 }

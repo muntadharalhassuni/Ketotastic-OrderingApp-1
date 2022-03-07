@@ -8,23 +8,34 @@ import javax.validation.constraints.NotBlank;
 import java.math.BigDecimal;
 
 @Entity
-@Data
 @Table(name="Delivery_Type")
 @NoArgsConstructor
-@AllArgsConstructor
-@RequiredArgsConstructor
-@FieldDefaults(level = AccessLevel.PRIVATE)
 
 public class DeliveryType {
     @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
 
-    @NonNull @Column(name = "delivery_type", unique = true, length = 45) @NotBlank
-    String deliveryType;
+    @Column(name = "delivery_type", unique = true, length = 45) @NotBlank
+    private String deliveryType;
 
+    public DeliveryType(String deliveryType) {
+        this.deliveryType = deliveryType;
+    }
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 
+    public String getDeliveryType() {
+        return deliveryType;
+    }
+
+    public void setDeliveryType(String deliveryType) {
+        this.deliveryType = deliveryType;
+    }
 }

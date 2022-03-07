@@ -50,7 +50,7 @@ public class Item implements Serializable {
     public Item() {
     }
 
-    public Item(Long itemId, String itemName, String itemDescription, BigDecimal itemPrice) {
+    public Item(String itemName, String itemDescription, BigDecimal itemPrice) {
         this.itemId = itemId;
         this.itemName = itemName;
         this.itemDescription = itemDescription;
