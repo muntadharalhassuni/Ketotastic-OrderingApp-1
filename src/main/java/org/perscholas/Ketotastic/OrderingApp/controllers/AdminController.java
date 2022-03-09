@@ -21,8 +21,7 @@ import java.util.List;
 public class AdminController {
 
 
-//    // make sure are import the slf4j object imports for this line of code
-//    public static final Logger LOG = LoggerFactory.getLogger(AdminController.class);
+
     @Autowired
     private UserService userService;
 
