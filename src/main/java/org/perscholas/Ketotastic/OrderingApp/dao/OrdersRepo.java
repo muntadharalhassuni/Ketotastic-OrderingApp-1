@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface OrdersRepo extends JpaRepository<Orders, Long> {
 
-//figure out some stuff here
+
 
     List<Orders> findByDate(String date);
     List<Orders> findByUserId(Long userId);

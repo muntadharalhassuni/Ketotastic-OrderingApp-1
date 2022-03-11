@@ -11,9 +11,7 @@ import java.math.BigDecimal;
 @Entity
 @Data
 @Table(name="item_orders")
-//@NoArgsConstructor
-//@AllArgsConstructor
-//@RequiredArgsConstructor
+
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ItemOrders {
 
@@ -22,7 +20,7 @@ public class ItemOrders {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long itemOrdersId;
 
-   // @Id
+
     @Column(name = "order_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long orderId;
@@ -31,22 +29,7 @@ public class ItemOrders {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long item_id;
 
-//    //@Id
-//    @Column(name = "user_id")
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    Long userId;
 
-    //@Id
-
-
-//    @NonNull @Column(name = "item_price", unique = false)
-//    @DecimalMin(value = "0.00", message = "Price has to be non negative number")
-//    BigDecimal itemPrice;
-//
-//    //@Id
-//    @Column(name = "delivery_id")
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    Long deliveryId;
 
 
 

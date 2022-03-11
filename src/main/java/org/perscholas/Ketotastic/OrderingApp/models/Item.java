@@ -35,17 +35,7 @@ public class Item implements Serializable {
     @NonNull @Column(name = "item_price", unique = false)
     @DecimalMin(value = "0.00", message = "Price has to be non negative number")
     BigDecimal itemPrice;
-// need to modify this area
 
-//    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
-//    @JoinTable(name = "item_orders",
-//            joinColumns = {
-//                    @JoinColumn(name = "order_id", referencedColumnName = "id",
-//                            nullable = false, updatable = false)},
-//            inverseJoinColumns = {
-//                    @JoinColumn(name = "item_id", referencedColumnName = "item_id",
-//                            nullable = false, updatable = false)})
-//    private Set<Orders> orders = new HashSet<>();
 
     public Item() {
     }

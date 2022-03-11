@@ -21,8 +21,7 @@ public class ShoppingCartService {
 
     private final ItemRepo itemRepo;
 
-//convert this into the user order table
-    //so when you submit order, it goes to the order table.
+
     private Map<Item, Integer> items = new HashMap<>();
 
     @Autowired
